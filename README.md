@@ -11,7 +11,7 @@
 ## Usage
 
 
-Clone this repository in your computer using  ```git clone ``` 
+Clone this repository in your computer using  ```git clone https://github.com/profbiyi/dsti_spark_project2021.git``` 
 
 
 ## Installation and setting up environment
