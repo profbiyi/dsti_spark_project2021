@@ -11,11 +11,18 @@ def extractDeliveriesMoreThan10Days: DataFrame = {
 
 
 //show
+printf("extract deliveries of more than 10 days")
 extractDeliveriesMoreThan10Days.show
+println("")
 
 //sanityCheck
+println("")
+printf("Running Sanity Checks")
 extractDeliveriesMoreThan10Days.filter(col("delivery_delay_in_days") <= 10).show
-extractDeliveriesMoreThan10Days.filter(col("delivery_delay_in_days") <= 10).count == 0
+println("")
 
 //output as CSV
+println("")
+printf("find CSV in the present working directory")
 extractDeliveriesMoreThan10Days.coalesce(1).write.option("header", "true").csv("delivery_delay_in_days.csv")
+println("")
